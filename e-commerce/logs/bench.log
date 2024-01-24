@@ -1,0 +1,119 @@
+2024-01-22 11:45:59,046 DEBUG cd e-commerce && python3 -m venv env
+2024-01-22 11:46:01,077 DEBUG cd e-commerce && /home/nihal/study/project/e-commerce/e-commerce/env/bin/python -m pip install --quiet --upgrade pip
+2024-01-22 11:46:02,875 DEBUG cd e-commerce && /home/nihal/study/project/e-commerce/e-commerce/env/bin/python -m pip install --quiet wheel
+2024-01-22 11:46:03,942 LOG Getting frappe
+2024-01-22 11:46:03,942 DEBUG cd e-commerce/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-01-22 11:46:08,105 LOG Installing frappe
+2024-01-22 11:46:08,106 DEBUG cd /home/nihal/study/project/e-commerce/e-commerce && /home/nihal/study/project/e-commerce/e-commerce/env/bin/python -m pip install --quiet --upgrade -e /home/nihal/study/project/e-commerce/e-commerce/apps/frappe 
+2024-01-22 11:46:55,593 DEBUG cd /home/nihal/study/project/e-commerce/e-commerce/apps/frappe && yarn install
+2024-01-22 11:46:58,266 DEBUG cd /home/nihal/study/project/e-commerce/e-commerce && sudo supervisorctl restart frappe:
+2024-01-22 11:46:58,434 WARNING cd /home/nihal/study/project/e-commerce/e-commerce && sudo supervisorctl restart frappe: executed with exit code 2
+2024-01-22 11:46:58,434 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2024-01-22 11:46:58,434 DEBUG cd e-commerce && bench build
+2024-01-22 11:46:58,506 INFO /home/nihal/.local/bin/bench build
+2024-01-22 11:47:11,449 LOG setting up backups
+2024-01-22 11:47:11,453 LOG backups were set up
+2024-01-22 11:47:11,453 INFO Bench e-commerce initialized
+2024-01-22 11:47:12,522 INFO A newer version of bench is available: 5.19.0 → 5.20.0
+2024-01-22 11:47:29,383 INFO /home/nihal/.local/bin/bench new-site nihal.local
+2024-01-22 11:47:57,709 INFO /home/nihal/.local/bin/bench start
+2024-01-22 11:47:57,894 INFO /home/nihal/.local/bin/bench worker
+2024-01-22 11:47:57,895 INFO /home/nihal/.local/bin/bench watch
+2024-01-22 11:47:57,900 INFO /home/nihal/.local/bin/bench schedule
+2024-01-22 11:47:57,902 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-22 11:49:24,315 INFO /home/nihal/.local/bin/bench get-app builder
+2024-01-22 11:49:25,494 LOG Getting builder
+2024-01-22 11:49:25,495 DEBUG cd ./apps && git clone https://github.com/frappe/builder.git  --depth 1 --origin upstream
+2024-01-22 11:49:28,883 LOG Installing builder
+2024-01-22 11:49:28,987 DEBUG cd /home/nihal/study/project/e-commerce/e-commerce && /home/nihal/study/project/e-commerce/e-commerce/env/bin/python -m pip install --quiet --upgrade -e /home/nihal/study/project/e-commerce/e-commerce/apps/builder 
+2024-01-22 11:49:32,713 DEBUG cd /home/nihal/study/project/e-commerce/e-commerce/apps/builder && yarn install
+2024-01-22 11:49:35,892 DEBUG bench build --app builder
+2024-01-22 11:49:35,986 INFO /home/nihal/.local/bin/bench build --app builder
+2024-01-22 11:49:47,736 DEBUG cd /home/nihal/study/project/e-commerce/e-commerce && sudo supervisorctl restart frappe:
+2024-01-22 11:49:47,893 WARNING cd /home/nihal/study/project/e-commerce/e-commerce && sudo supervisorctl restart frappe: executed with exit code 2
+2024-01-22 11:49:47,893 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2024-01-22 11:49:48,622 INFO A newer version of bench is available: 5.19.0 → 5.20.0
+2024-01-22 11:50:58,690 INFO /home/nihal/.local/bin/bench --site nihal.local add-to-hosts
+2024-01-22 11:51:15,895 INFO /home/nihal/.local/bin/bench --site nihal.local install-app builder
+2024-01-22 11:51:27,266 INFO /home/nihal/.local/bin/bench start
+2024-01-22 11:51:27,446 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-22 11:51:27,448 INFO /home/nihal/.local/bin/bench worker
+2024-01-22 11:51:27,458 INFO /home/nihal/.local/bin/bench schedule
+2024-01-22 11:51:27,469 INFO /home/nihal/.local/bin/bench watch
+2024-01-22 12:00:01,840 INFO /home/nihal/.local/bin/bench --verbose --site all backup
+2024-01-22 13:34:41,292 INFO /home/nihal/.local/bin/bench start
+2024-01-22 13:34:41,519 INFO /home/nihal/.local/bin/bench worker
+2024-01-22 13:34:41,519 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-22 13:34:41,519 INFO /home/nihal/.local/bin/bench schedule
+2024-01-22 13:34:41,521 INFO /home/nihal/.local/bin/bench watch
+2024-01-22 14:08:22,908 INFO /home/nihal/.local/bin/bench new-app ecom
+2024-01-22 14:08:22,911 LOG creating new app ecom
+2024-01-22 14:08:53,606 LOG Installing ecom
+2024-01-22 14:08:53,607 DEBUG cd /home/nihal/study/project/e-commerce/e-commerce && /home/nihal/study/project/e-commerce/e-commerce/env/bin/python -m pip install --quiet --upgrade -e /home/nihal/study/project/e-commerce/e-commerce/apps/ecom 
+2024-01-22 14:08:55,979 DEBUG bench build --app ecom
+2024-01-22 14:08:56,081 INFO /home/nihal/.local/bin/bench build --app ecom
+2024-01-22 14:09:00,748 DEBUG cd /home/nihal/study/project/e-commerce/e-commerce && sudo supervisorctl restart frappe:
+2024-01-22 14:09:00,960 WARNING cd /home/nihal/study/project/e-commerce/e-commerce && sudo supervisorctl restart frappe: executed with exit code 2
+2024-01-22 14:09:00,960 WARNING restarting supervisor failed. Use `bench restart` to retry.
+2024-01-22 14:09:01,741 INFO A newer version of bench is available: 5.19.0 → 5.20.0
+2024-01-22 14:09:23,714 INFO /home/nihal/.local/bin/bench --site nihal.local install-app ecom
+2024-01-22 14:09:34,407 INFO /home/nihal/.local/bin/bench --site nihal.local list-apps
+2024-01-22 14:09:39,435 INFO /home/nihal/.local/bin/bench start
+2024-01-22 14:09:39,658 INFO /home/nihal/.local/bin/bench schedule
+2024-01-22 14:09:39,660 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-22 14:09:39,660 INFO /home/nihal/.local/bin/bench watch
+2024-01-22 14:09:39,676 INFO /home/nihal/.local/bin/bench worker
+2024-01-22 16:13:45,809 INFO /home/nihal/.local/bin/bench start
+2024-01-22 16:13:46,079 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-22 16:13:46,079 INFO /home/nihal/.local/bin/bench watch
+2024-01-22 16:13:46,082 INFO /home/nihal/.local/bin/bench schedule
+2024-01-22 16:13:46,082 INFO /home/nihal/.local/bin/bench worker
+2024-01-22 16:48:05,846 INFO /home/nihal/.local/bin/bench start
+2024-01-22 16:48:06,040 INFO /home/nihal/.local/bin/bench schedule
+2024-01-22 16:48:06,042 INFO /home/nihal/.local/bin/bench worker
+2024-01-22 16:48:06,042 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-22 16:48:06,079 INFO /home/nihal/.local/bin/bench watch
+2024-01-22 18:00:01,829 INFO /home/nihal/.local/bin/bench --verbose --site all backup
+2024-01-23 19:41:05,691 INFO /home/nihal/.local/bin/bench start
+2024-01-23 19:41:05,874 INFO /home/nihal/.local/bin/bench schedule
+2024-01-23 19:41:05,875 INFO /home/nihal/.local/bin/bench worker
+2024-01-23 19:41:05,877 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-23 19:41:05,883 INFO /home/nihal/.local/bin/bench watch
+2024-01-24 00:00:01,640 INFO /home/nihal/.local/bin/bench --verbose --site all backup
+2024-01-24 12:00:02,179 INFO /home/nihal/.local/bin/bench --verbose --site all backup
+2024-01-24 13:37:59,908 INFO /home/nihal/.local/bin/bench start
+2024-01-24 13:38:00,175 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-24 13:38:00,178 INFO /home/nihal/.local/bin/bench schedule
+2024-01-24 13:38:00,179 INFO /home/nihal/.local/bin/bench worker
+2024-01-24 13:38:00,213 INFO /home/nihal/.local/bin/bench watch
+2024-01-24 13:40:13,820 INFO /home/nihal/.local/bin/bench start
+2024-01-24 13:40:14,004 INFO /home/nihal/.local/bin/bench schedule
+2024-01-24 13:40:14,004 INFO /home/nihal/.local/bin/bench watch
+2024-01-24 13:40:14,005 INFO /home/nihal/.local/bin/bench worker
+2024-01-24 13:40:14,007 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-24 13:40:23,590 INFO /home/nihal/.local/bin/bench start
+2024-01-24 13:40:23,921 INFO /home/nihal/.local/bin/bench worker
+2024-01-24 13:40:23,930 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-24 13:40:23,939 INFO /home/nihal/.local/bin/bench watch
+2024-01-24 13:40:23,970 INFO /home/nihal/.local/bin/bench schedule
+2024-01-24 13:42:27,985 INFO /home/nihal/.local/bin/bench start
+2024-01-24 13:42:28,169 INFO /home/nihal/.local/bin/bench watch
+2024-01-24 13:42:28,169 INFO /home/nihal/.local/bin/bench schedule
+2024-01-24 13:42:28,178 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-24 13:42:28,178 INFO /home/nihal/.local/bin/bench worker
+2024-01-24 13:42:34,835 INFO /home/nihal/.local/bin/bench start
+2024-01-24 13:42:35,014 INFO /home/nihal/.local/bin/bench worker
+2024-01-24 13:42:35,014 INFO /home/nihal/.local/bin/bench schedule
+2024-01-24 13:42:35,017 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-24 13:42:35,018 INFO /home/nihal/.local/bin/bench watch
+2024-01-24 13:52:36,370 INFO /home/nihal/.local/bin/bench --site nihal.local set-config devoleoper_mode 1
+2024-01-24 13:52:40,650 INFO /home/nihal/.local/bin/bench start
+2024-01-24 13:52:40,828 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-24 13:52:40,829 INFO /home/nihal/.local/bin/bench worker
+2024-01-24 13:52:40,837 INFO /home/nihal/.local/bin/bench schedule
+2024-01-24 13:52:40,839 INFO /home/nihal/.local/bin/bench watch
+2024-01-24 13:53:11,278 INFO /home/nihal/.local/bin/bench start
+2024-01-24 13:53:11,458 INFO /home/nihal/.local/bin/bench schedule
+2024-01-24 13:53:11,460 INFO /home/nihal/.local/bin/bench serve --port 8000
+2024-01-24 13:53:11,460 INFO /home/nihal/.local/bin/bench watch
+2024-01-24 13:53:11,460 INFO /home/nihal/.local/bin/bench worker

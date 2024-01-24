@@ -1,0 +1,24 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_95ff429e96bc6e9e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _95ff429e96bc6e9e | /usr/bin/gzip >> ./nihal.local/private/backups/20240122_120002-nihal_local-database.sql.gz
+
+Backup Summary for nihal.local at 2024-01-22 12:00:02.676005
+Config  : /home/nihal/study/project/e-commerce/e-commerce/sites/nihal.local/private/backups/20240122_120002-nihal_local-site_config_backup.json 127.0B
+Database: /home/nihal/study/project/e-commerce/e-commerce/sites/nihal.local/private/backups/20240122_120002-nihal_local-database.sql.gz 270.6KiB
+Backup for Site nihal.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_95ff429e96bc6e9e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _95ff429e96bc6e9e | /usr/bin/gzip >> ./nihal.local/private/backups/20240122_180003-nihal_local-database.sql.gz
+
+Backup Summary for nihal.local at 2024-01-22 18:00:04.142065
+Config  : /home/nihal/study/project/e-commerce/e-commerce/sites/nihal.local/private/backups/20240122_180003-nihal_local-site_config_backup.json 127.0B
+Database: /home/nihal/study/project/e-commerce/e-commerce/sites/nihal.local/private/backups/20240122_180003-nihal_local-database.sql.gz 357.4KiB
+Backup for Site nihal.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_95ff429e96bc6e9e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _95ff429e96bc6e9e | /usr/bin/gzip >> ./nihal.local/private/backups/20240124_000002-nihal_local-database.sql.gz
+
+Backup Summary for nihal.local at 2024-01-24 00:00:02.485566
+Config  : /home/nihal/study/project/e-commerce/e-commerce/sites/nihal.local/private/backups/20240124_000002-nihal_local-site_config_backup.json 127.0B
+Database: /home/nihal/study/project/e-commerce/e-commerce/sites/nihal.local/private/backups/20240124_000002-nihal_local-database.sql.gz 457.5KiB
+Backup for Site nihal.local has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_95ff429e96bc6e9e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _95ff429e96bc6e9e | /usr/bin/gzip >> ./nihal.local/private/backups/20240124_120003-nihal_local-database.sql.gz
+
+Backup Summary for nihal.local at 2024-01-24 12:00:03.535329
+Config  : /home/nihal/study/project/e-commerce/e-commerce/sites/nihal.local/private/backups/20240124_120003-nihal_local-site_config_backup.json 127.0B
+Database: /home/nihal/study/project/e-commerce/e-commerce/sites/nihal.local/private/backups/20240124_120003-nihal_local-database.sql.gz 516.9KiB
+Backup for Site nihal.local has been successfully completed
